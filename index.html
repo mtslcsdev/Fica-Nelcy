@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para Nelcy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/5/58/Buenos_Aires_at_night.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #ffc107;
+        }
+        .message {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #f8f9fa;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #e91e63;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(233, 30, 99, 0.5);
+        }
+        .card {
+            display: none;
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            color: #000;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .friends {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+        .friend-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #e91e63;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/img/nelcy.jpeg" alt="Amiga" class="profile-img">
+        <h1>#FicaNelcy</h1>
+        <p class="message">Nelcy, queremos que você aproveite cada momento dessa viagem incrível! Estaremos torcendo para que você seja muito feliz nessa nova jornada. Sentiremos sua falta!</p>
+        <button class="btn" onclick="showCard()">APERTE AQUI</button>
+        <div class="card" id="card">
+            <img src="/img/argentina.jpg" alt="Argentina">
+            <div class="friends">
+                <img src="/img/eu.jpeg" alt="Você" class="friend-img">
+                <img src="/img/jorge.jpeg" alt="Amigo" class="friend-img">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showCard() {
+            const card = document.getElementById('card');
+            card.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
